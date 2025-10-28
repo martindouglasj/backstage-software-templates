@@ -38,7 +38,7 @@ jobs:
         run: |
           echo ${{ '${{ needs.ci.outputs.short_sha }}' }}
           pip install yq
-          yq -Yi '.image.tag = "${{ '${{ needs.ci.outputs.short_sha }}' }}"' charts/${{ values.app_name }}/values-${{ values.env }}.yaml
+          yq -Yi '.image.tag = "${{ '${{ needs.ci.outputs.short_sha }}' }}"' charts/${{ values.app_name }}/values-${{ values.app_env }}.yaml
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
