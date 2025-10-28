@@ -4,7 +4,7 @@ metadata:
   name: ${{ values.app_name }}
   description: Python Flask app that displays the time, named ${{ values.app_name }}.
   annotations:
-    github.com/project-slug: martindouglasj/${{ values.app_name }}
+    github.com/project-slug: martindouglasj-org/${{ values.app_name }}
     backstage.io/techdocs-ref: dir:.
 spec:
   type: service
